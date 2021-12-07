@@ -1,1 +1,94 @@
-/* Don't forget that media queries are required for this project */
+/* Global Styling (Be cautious of what you put in here) */
+body {
+    background-color:#FDFBF5;}
+html * {font-family: 'Montserrat', sans-serif;}
+/* Desktop view-------------------------------------- */
+@media screen and (min-width:993px) {
+    
+footer {
+    background-color: #445560;
+}
+.footerlogo {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    max-height: 200px;
+    max-width: 200px;
+}
+.container{
+    display: flex;
+}
+
+}
+
+/* Large Tablet View-------------------------------------- */
+@media screen and (min-width:992px) {
+
+}
+/* Medium Tablet View-------------------------------------- */
+
+/* Mobile View-------------------------------------- */
+@media screen and (max-width:480px) {
+/* nav Bar Start*/
+.header {
+    background-color: #445560;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.dropdown-img {
+    width: 65px;
+height: auto;
+}
+
+.logo {
+    width: 150px;
+height: auto;
+padding-top: 5px;
+margin-left: 13vw;
+
+}
+.dropbtn {
+    color: antiquewhite;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding-top: 1vh;
+    background-color: transparent;
+    max-width: 25%;
+}
+
+.dropdown {
+    width: 100px;
+}
+.dropdown-content {
+    display: none;
+    background-color: #445560;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom: 2px, solid, #FF9666 ;
+    left: 0;}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }  
+  .dropdown-content a {
+    color: #FDFBF5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Nav Bar End */
+/* Footer Start */
+
+
+/* Footer End */
+}
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
