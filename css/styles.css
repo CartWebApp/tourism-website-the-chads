@@ -32,25 +32,28 @@ footer {
 /* nav Bar Start*/
 .header {
     background-color: #445560;
-    height: 75px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: start;
     align-items: center;
+    position: absolute; top:0;
+    position: absolute; right: 0;
+    position: absolute; left: 0;
 }
 
 .dropdown-img {
-    width: 65px;
+    width: 35px;
 height: auto;
 }
 
 .logo {
-    width: 150px;
+    width: 170px;
 height: auto;
-padding-top: 5px;
-margin-left: 13vw;
-
+padding-top: 4px;
+margin-left: 9vw;
+cursor: pointer;
 }
 .dropbtn {
     color: antiquewhite;
@@ -59,7 +62,7 @@ margin-left: 13vw;
     border: none;
     padding-top: 1vh;
     background-color: transparent;
-    max-width: 25%;
+    max-width: 15%;
 }
 
 .dropdown {
@@ -70,9 +73,7 @@ margin-left: 13vw;
     background-color: #445560;
     position: absolute;
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-bottom: 2px, solid, #FF9666 ;
     left: 0;}
 .dropdown:hover .dropdown-content {
     display: block;
@@ -83,7 +84,16 @@ margin-left: 13vw;
     text-decoration: none;
     display: block;
   }
-
+  .dropdown-Lebanon {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 160px;
+    top: 0px;
+    min-width: 160px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
 /* Nav Bar End */
 /* Footer Start */
 
