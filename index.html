@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="icon.ico" />
     <title>Tismo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="dropdown">
         <button class="dropbtn">
           <img class="dropdown-img" src="IMG/menu.png" />
         </button>
-        <div class="dropdown-content">
-          <a href="destinations.html">Destinations</a>
-          <a href="Lebanon/lebanon-about.html">Lebanon</a>
-          <a href="Egypt/egypt-about.html">Egypt</a>
-          <a href="Canada/canada-about.html">Canada</a>
-        </div>
+        <nav>
+          <ul class="dropdown-content">
+          <li><a  href="destinations.html">Destinations</a></li>
+          <li><a  href="Lebanon/lebanon-about.html">Lebanon</a></li>
+          <li><a href="index.html"
+          ><img class="logodesktop" src="IMG/fixedtismo.png" alt="Tismo Logo"
+        /></a></li>
+          <li><a  href="Egypt/egypt-about.html">Egypt</a></li>
+          <li><a  href="Canada/canada-about.html">Canada</a></li>
+          </ul>
+        </nav>
       </div>
       <div>
         <a href="index.html"
@@ -28,18 +35,16 @@
       </div>
     </header>
     <!-- heroimg -->
-    <div class="hero">
-      <img
-        class="heroimg"
-        src="IMG/Jeita Grotto Hero.jpg"
-        alt="Jeita Grotto Hero"
-      />
-      <div class="herotxt">
-        <h1>Beirut, Lebanon</h1>
-        <h2>Jeita Grotto</h2>
-        <a href="Lebanon/lebanon-about.html"><button>Learn More</button></a>
+    <section class="hero1">
+      <div class="hero-inner">
+        <h1>Tismo, there's no better way.</h1>
+    
+        <h2>Beirut, Lebanon; Jeita Grotto</h2>
+        <a href="Lebanon/lebanon-about.html" class="herobutton">Learn More!</a>
       </div>
-    </div>
+    </section>
+    
+
     <!-- Destinations on Index -->
     <div class="index-destinations">
       <div class="dest-Lebanon">
@@ -60,9 +65,21 @@
     <footer>
       <div class="container">
         <div>
-          <img src="IMG/fixedtismo.png" class="footerlogo" alt="Footer Logo" />
+          <img src="IMG/fixedtismo.png" class="footerlogo" alt="Footer Logo"/>
         </div>
         <button class="footerbutton">Browse Destinations</button>
+        <div class="socials">
+            <h4>Follow Us!</h4>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+        </div>
       </div>
     </footer>
   </body>
