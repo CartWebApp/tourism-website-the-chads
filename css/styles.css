@@ -3,9 +3,67 @@ body {
     background-color:#FDFBF5;
 margin: 0;}
 html * {font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 list-style-type: none}
+/* General Hero Image */
+.hero1 {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FDFBF5;
+    text-decoration: none;
+    background-image: url("https://wallpaperaccess.com/full/627752.jpg")
+}
+.hero1 h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.herobutton{
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    border: 3px solid #FDFBF5 ;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
+/* General Footer */
+footer {
+    background-color: #445560;
+    max-height:400px;
+}
+.footerlogo {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerbutton {
+    background-color: #3e9095;
+    color: white;
+}
+h4 {
+    color: white;
+}
+i {
+    color:white;
+}
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* Desktop view-------------------------------------- */
 @media screen and (min-width:993px) {
 /* Header */
@@ -31,7 +89,7 @@ list-style-type: none}
     justify-content: space-between;
     align-items: center;
     height: 40px;
-margin-left: 7vw;
+margin-left: 5vw;
 margin-right: 7vw;
 }
 .logodesktop {
@@ -62,37 +120,24 @@ a::after {
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
-/* Desktop Heroimg */
-.hero1 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .dest-flex {
+      margin-left: 3vw;
+      margin-right: 3vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+  }
+.index-destinations h3 {
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #FDFBF5;
-    text-decoration: none;
-    background-image: url("https://lp-cms-production.imgix.net/2019-06/1444dbfb91889c964033cf90d6bc6cc9-jeita-grotto.jpg")
+    font-size: 56px;
+font-weight: bold;
 }
-.hero1 h1 {
-    font-size: 5em;
-    margin-top: 0;
-    margin-bottom: 0.5em;
+.dest-Lebanon, .dest-Canada, .dest-Egypt {
+    width: 30%;
 }
-.herobutton{
-    display: block;
-    width: 200px;
-    padding: 1em;
-    margin-top: 50px;
-    border: 3px solid #FDFBF5 ;
-    margin-left:auto;
-    margin-right:auto;
-    text-decoration: none;
-    font-size: 1.5em;
-    border-radius: 20px;
+.dest-Lebanon img {
+    height: auto;
+    width: 100%;
 }
 }
 /* Large Tablet View-------------------------------------- */
@@ -161,49 +206,10 @@ a::after {
         background-color: #f9f9f9;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       }
-}
-.heroimg {
-    width: 100vw;
-    height: 40%;
-    margin-top: 62px;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    position: absolute; left: 0;
-}
-.herotxt {
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #F8F5EC;
-    font-weight: 900;
-}
-.herotxt h1 {
-    font-style: italic;
-}
 
-.herotxt button:hover {
-    background-color: #555;
-    color: white;
-  }
-.herotxt button {
-border:none;
-outline: 0;
-display: inline-block;
-padding: 10px 25px;
-color: black;
-background-color: #C3D44E;
-text-align: center;
-cursor: pointer;
-}
 /* Footer Start */
 footer {
     background-color: #445560;
-    position: fixed;
-    bottom:0;
-    position: absolute; right: 0;
-    position: absolute; left: 0;
 }
 .footerlogo {
     padding-top: 20px;
@@ -229,43 +235,12 @@ i {
 
 /* Footer End */
 /* Destinations on Index */
-.dest-Lebanon {
-
-}
 .dest-Lebanon img {
     height: auto;
     width: 100%;
 }
+}
 /* Medium Tablet View-------------------------------------- */
-/* Footer Start */
-
-footer {
-    background-color: #445560;
-    position: fixed;
-    bottom:0;
-    position: absolute; right: 0;
-    position: absolute; left: 0;
-}
-.footerlogo {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-.container{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footerbutton {
-    background-color: rgba(62, 144, 149, 1);
-    color: white;
-}
-h4 {
-    color: white;
-}
-i {
-    color:white;
-}
 /* Mobile View-------------------------------------- */
 @media screen and (max-width:480px) {
 /* nav Bar Start*/
@@ -356,35 +331,3 @@ cursor: pointer;
     height: auto;
     width: 100%;
 }
-/* Footer Start */
-
-footer {
-    background-color: #445560;
-    position: fixed;
-    bottom:0;
-    position: absolute; right: 0;
-    position: absolute; left: 0;
-}
-.footerlogo {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-.container{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footerbutton {
-    background-color: rgba(62, 144, 149, 1);
-    color: white;
-}
-h4 {
-    color: white;
-}
-i {
-    color:white;
-}
-
-}
-/* Footer End */
