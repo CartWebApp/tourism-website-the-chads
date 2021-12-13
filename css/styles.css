@@ -8,7 +8,7 @@ list-style-type: none}
 /* General Hero Image */
 .hero1 {
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,7 @@ list-style-type: none}
     margin-right:auto;
     font-size: 1.5em;
     border-radius: 20px;
+    color: white;
 }
 /* General Footer */
 footer {
@@ -120,6 +121,10 @@ a::after {
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
+/* Destinations on Index */
+.index-destinations {
+    margin-bottom: 65px;
+}
   .dest-flex {
       margin-left: 3vw;
       margin-right: 3vw;
@@ -132,12 +137,34 @@ a::after {
     font-size: 56px;
 font-weight: bold;
 }
+.index-destinations h4 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bolder;
+}
+.index-destinations a {
+ background-color: #3e9095;
+color: white;
+font-size: 25px;
+padding: 10px;
+border-radius: 20px;
+display:inline-block;
+margin-bottom: 5px;
+}
 .dest-Lebanon, .dest-Canada, .dest-Egypt {
     width: 30%;
+    background-color: #445560 ;
+    border:8px solid #2a3238;
+    border-radius: 10px;
+
 }
-.dest-Lebanon img {
+.dest-Lebanon, .dest-Egypt {
+    margin-top: 45px;
+}
+.dest-Lebanon img, .dest-Canada img, .dest-Egypt img {
     height: auto;
     width: 100%;
+    border-radius: 3px;
 }
 }
 /* Large Tablet View-------------------------------------- */
