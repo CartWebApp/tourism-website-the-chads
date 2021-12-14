@@ -289,25 +289,33 @@ margin-left: 20vw
 /* Information on About Page */
 .about-boxes {
     margin-top: 75px;
-    margin-left: 7vw;
-    margin-right: 7vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .about-boxes img {
-    width: 45vw;
+    display: block;
+    width: 46vw;
     height: auto;
     margin-right:3vw;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 8px #888888;
+    max-height:500px;
 }
 .about-boxes-1 {
     color: #000000;
     width: 35vw;
+    margin-top: 25px;
+    margin-left: 3vw;
 }
 .about-boxes-1 p{
     padding: 5px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 2;
+    margin-right:3vw;
 }
 .about-boxes-1 h3 {
     text-align: center;
