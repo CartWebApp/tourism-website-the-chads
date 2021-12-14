@@ -20,13 +20,13 @@ list-style-type: none}
     text-decoration: none;
     background-image: url("https://wallpaperaccess.com/full/627752.jpg")
 }
-.destinations  {
+.destinations .hero1  {
     background-image: url(../IMG/GrottoHero.jpg);
 }
 .lebanon.html-abou {
     background-image: url(../IMG/GrottoHero.jpg);
 }
-.lebanon.html-disc .hero1 {
+.lebanon-discover .hero1 {
     background-image: url(../IMG/Pigeon-Rock.jpg);
 }
 .hero1 h1 {
@@ -537,4 +537,5 @@ cursor: pointer;
 .Aboutboxes p {
     font-size: 30px;
     padding: 30px
+}
 }
