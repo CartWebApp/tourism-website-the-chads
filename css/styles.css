@@ -8,7 +8,6 @@ list-style-type: none}
 /* General Hero Image */
 .hero1 {
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +17,12 @@ list-style-type: none}
     background-attachment: fixed;
     color: #FDFBF5;
     text-decoration: none;
-    background-image: url("https://wallpaperaccess.com/full/627752.jpg")
+    background-image: url(../IMG/Canada-Forest.jpg)
 }
 .destinations .hero1  {
     background-image: url(../IMG/GrottoHero.jpg);
 }
-.lebanon.html-abou .hero1 {
+.lebanon-about .hero1 {
     background-image: url(../IMG/GrottoHero.jpg);
 }
 .lebanon-discover .hero1 {
@@ -32,15 +31,9 @@ list-style-type: none}
 .lebanon-visi .hero1 {
     background-image: url(../IMG/lebanon-plane.jpg);
 }
-.hero1 h1 {
-    font-size: 5em;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
 .herobutton{
     display: block;
     width: 200px;
-    padding: 1em;
     margin-top: 50px;
     border: 3px solid #FDFBF5 ;
     margin-left:auto;
@@ -55,24 +48,169 @@ footer {
     max-height:400px;
 }
 
-button {
+.footerbutton {
+    color: white;
+    background-color: rgba(62, 144, 149, 1);
+    height: 9vh;
+    width: auto;
+}
+a {
     color: white;
 }
-
 .container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
-.button {
-    height: 100px;
-    width: auto;
-    background-color: rgba(62, 144, 149, 1);
+.upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .footerlogo {
     height: 100px;
     width: auto;
 }
+.footertitle {
+    color: white;
+    margin-left: 7%;
+}
+.footerlinks {
+    color: white;
+    margin-left: 7%;
+}
+
+/* About Page Scaling */
+.about-boxes img {
+    box-shadow: 10px 10px 8px #888888;
+    max-height:500px;
+}
+.about-boxes {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about-boxes-1 {
+    color: #000000;
+}
+.about-boxes-1 p{
+    padding: 5px;
+    font-size: 16px;
+    line-height: 2;
+}
+.about-boxes-1 h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+}
+/* Country Nav Button Scaling */
+.nav-buttons-div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nav-buttons {
+    border: 5px solid #3e9095;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.nav-buttons:hover {
+    box-shadow:0px 0px 0px 5px #FF9666 inset;
+}
+/* Destinations on Index Scaling */
+
+  .dest-flex {
+      display: flex;
+      justify-content: space-between;
+  }
+.index-destinations h3, .AboutUs h3, .dest-list h3, .tourist-about-header h3{
+    text-align: center;
+font-weight: bold;
+color: black;
+}
+.index-destinations h4 {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.index-destinations a {
+ background-color: #3e9095;
+color: white;
+display:inline-block;
+text-align: center;
+
+}
+.dest-Lebanon, .dest-Canada, .dest-Egypt {
+    width: 30%;
+    background-color: #445560 ;
+
+}
+.dest-Lebanon:hover, .dest-Canada:hover, .dest-Egypt:hover {
+    transform:scale(1.1);
+    transition: transform 0.25s ease-in;
+}
+.destinations-text {
+    text-align: center;
+}
+/* About Us Index Scaling */
+
+.AboutUs-text {
+    background-color: rgba(0, 0, 0, 0.10);
+    display: flex;}
+/* Destination.html scaling */
+.destinations-flex{
+display: flex;
+}
+.destinations-Lebanon {
+    display:flex;
+}
+.destinations-Lebanon article {
+    background-color: #445560 ;
+    color: #FDFBF5;
+text-decoration: none;
+}
+.dest-text h4 {
+    text-align: center;
+}
+.dest-text p {
+    text-align: left;
+}
+.destinations-Lebanon img {
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.destinations-Lebanon a {
+background-color: #C3D44E;
+display:inline-block;
+color: black;
+}
+.dest-text {
+    box-shadow: 10px 10px 8px #888888;
+}
+/* Link hover line */
+a:hover::after {
+    transform: scaleX(1);
+  }
+a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    background-color: #FDFBF5;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -118,21 +256,19 @@ margin-right: 7vw;
 font-size: 20px;
 color: #FDFBF5;
 }
-a:hover::after {
-    transform: scaleX(1);
-  }
-a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    border-radius: 50px;
-    background-color: #FDFBF5;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
+
+  /* HeroImg Settings */
+  .hero1 h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero1 {
+    height: 100vh;
+}
+.herobutton {
+    padding: 1em;
+}
 /* Destinations on Index */
 .index-destinations {
     margin-bottom: 65px;
@@ -140,15 +276,11 @@ a::after {
   .dest-flex {
       margin-left: 7vw;
       margin-right: 7vw;
-      display: flex;
-      justify-content: space-between;
       flex-wrap: nowrap;
   }
 .index-destinations h3, .AboutUs h3, .dest-list h3, .tourist-about-header h3{
     text-align: center;
     font-size: 56px;
-font-weight: bold;
-color: black;
 }
 .index-destinations h4 {
     font-size: 40px;
@@ -157,26 +289,18 @@ color: black;
     color: rgb(255, 255, 255);
 }
 .index-destinations a {
- background-color: #3e9095;
-color: white;
 font-size: 25px;
 padding: 10px;
 border-radius: 20px;
-display:inline-block;
 margin-bottom: 5px;
-text-align: center;
 
 }
 .dest-Lebanon, .dest-Canada, .dest-Egypt {
-    width: 30%;
-    background-color: #445560 ;
     border:10px solid #2a3238;
 
 }
 .dest-Lebanon:hover, .dest-Canada:hover, .dest-Egypt:hover {
     border: 10px solid #FF9666;
-    transform:scale(1.1);
-    transition: transform 0.25s ease-in;
 }
 .dest-Lebanon, .dest-Egypt {
     margin-top: 45px;
@@ -184,9 +308,6 @@ text-align: center;
 .dest-Lebanon img, .dest-Canada img, .dest-Egypt img {
     height: auto;
     width: 100%;
-}
-.destinations-text {
-    text-align: center;
 }
 /* About Us on Index */
 .AboutUs {
@@ -196,8 +317,6 @@ text-align: center;
     margin-bottom: 75px;
 }
 .AboutUs-text {
-    background-color: rgba(0, 0, 0, 0.10);
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;}
     .AboutUs-text img {
@@ -214,80 +333,50 @@ text-align: center;
     margin-right: 7vw;
 }
 .destinations-flex{
-display: flex;
 flex-direction: column;
 }
 .destinations-Lebanon {
-    display:flex;
     flex-direction: row;
     margin-bottom: 50px;
 }
 .destinations-Lebanon article {
-    background-color: #445560 ;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 2vw;
     padding-right: 2vw;
-    color: #FDFBF5;
     padding-bottom: 2vw;
-text-decoration: none;
 }
 .dest-text h4 {
     margin-bottom: 15px;
-    text-align: center;
     font-size: 36px;
     font: weight 900px;
 }
 .dest-text p {
-    text-align: left;
     font-size: 18px;
 }
 .destinations-Lebanon img {
     height: auto;
     width: 35%;
     border-radius: 18px;
-    box-shadow: 10px 10px 8px #888888;
-}
-.destinations-Lebanon img:hover {
-    transform:scale(1.25);
-    transition: transform 0.1s ease-in;
-    box-shadow: 0px 0px 0px transparent;
 }
 .destinations-Lebanon a {
-background-color: #C3D44E;
-display:inline-block;
 padding-left: 45px;
 padding-right: 45px;
 padding-top: 20px;
 padding-bottom: 20px;
-color: black;
 font-size: 25px;
 margin-left: 20vw
-}
-.dest-text {
-    box-shadow: 10px 10px 8px #888888;
 }
 /* Navigation Through Country Pages */
 .nav-buttons-div {
     margin-left: 15vw;
     margin-right: 15vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     margin-top: 50px;
 }
 .nav-buttons {
-    border: 5px solid #3e9095;
-    border: none;
-    color: black;
     padding: 40px;
     border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    cursor: pointer;
+    font-size: 36px;
     box-shadow:0px 0px 0px 5px #000000 inset;}
 .nav-buttons:hover {
     box-shadow:0px 0px 0px 5px #FF9666 inset;
@@ -300,82 +389,274 @@ margin-left: 20vw
     margin-right:3vw;
     margin-top: 75px;
     margin-bottom: 100px;
-    box-shadow: 10px 10px 8px #888888;
-    max-height:500px;
 }
 .about-boxes {
     margin-top: 75px;
     margin-left: 3vw;
     margin-right: 3vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap
+
 }
 .about-boxes-1 {
-    color: #000000;
     width: 35vw;
     margin-top: 25px;
     margin-left: 3vw;
+    margin-right: 2vw;
 }
 .about-boxes-1 p{
-    padding: 5px;
-    font-size: 16px;
-    line-height: 2;
     margin-right:3vw;
 }
-.about-boxes-1 h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 38px;
-}
+
 }
 /* Large Tablet View-------------------------------------- */
 @media screen and (max-width:992px) {
+    /* ------------------------------------------INDEX----------------------------- */
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70px;
+    position: absolute; top:0;
+    position: absolute; right: 0;
+    position: absolute; left: 0;
+}
+/* Removed Header Elements */
+.dropbtn{
+    display:none;
+}
+.logo {
+    display:none;
+}
+/* -------------------- */
+.dropdown-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+margin-left: 5vw;
+margin-right: 7vw;
+}
+.logodesktop {
+    width: 160px;
+    height: auto;
+    padding-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.dropdown-content a{
+    text-decoration: none;
+font-size: 20px;
+color: #FDFBF5;
+}
+
+  /* HeroImg Settings */
+  .hero1 h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero1 {
+    height: 100vh;
+}
+.herobutton {
+    padding: 1em;
+}
+/* Destinations on Index */
+.index-destinations {
+    margin-bottom: 65px;
+}
+  .dest-flex {
+      margin-left: 7vw;
+      margin-right: 7vw;
+      flex-wrap: nowrap;
+  }
+.index-destinations h3, .AboutUs h3, .dest-list h3, .tourist-about-header h3{
+    text-align: center;
+    font-size: 56px;
+}
+.index-destinations h4 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.index-destinations a {
+font-size: 25px;
+padding: 10px;
+border-radius: 20px;
+margin-bottom: 5px;
+
+}
+.dest-Lebanon, .dest-Canada, .dest-Egypt {
+    border:10px solid #2a3238;
+
+}
+.dest-Lebanon:hover, .dest-Canada:hover, .dest-Egypt:hover {
+    border: 10px solid #FF9666;
+}
+.dest-Lebanon, .dest-Egypt {
+    margin-top: 45px;
+}
+.dest-Lebanon img, .dest-Canada img, .dest-Egypt img {
+    height: auto;
+    width: 100%;
+}
+/* About Us on Index */
+.AboutUs {
+    margin-top: 65px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 75px;
+}
+.AboutUs-text {
+    flex-wrap: nowrap;
+    flex-direction: row;}
+    .AboutUs-text img {
+        padding: 30px;
+        width: 35%; 
+    }
+.AboutUs p {
+    font-size: 30px;
+    padding: 30px
+}
+/* -----------------------Destinations.html---------------------------------- */
+/* Destinations.html Scaling/edits */
+.dest-list {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.destinations-flex{
+flex-direction: column;
+}
+.destinations-Lebanon {
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.destinations-Lebanon article {
+    margin-bottom: 15px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+}
+.dest-text h4 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font: weight 900px;
+}
+.dest-text p {
+    font-size: 17px;
+}
+.destinations-Lebanon img {
+    height: auto;
+    width: 100%;
+    border-radius: 0px;
+}
+.destinations-Lebanon a {
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 25px;
+margin-left: 20vw
+}
+/* Country Nav Button Scaling */
+.nav-buttons-div {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
+
+}
+.nav-buttons {
+    padding: 10px;
+    border-radius: 30%;
+    box-shadow:0px 0px 0px 4px #000000 inset;
+font-size: 30px;}
+
+.nav-buttons:hover {
+    box-shadow:0px 0px 0px 4px #FF9666 inset;
+}
+ .tourist-about-header h3 {
+    text-align: center;
+    font-size: 40px;
+font-weight: bold;
+color: black;
+}
+.about-boxes img {
+    width: 80vw;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.about-boxes {
+    margin-top: 25px;
+    margin-left: 0vw;
+    margin-right: 0vw;
+
+}
+.about-boxes-1 {
+    width: 80vw;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+}
+/* Medium Tablet View-------------------------------------- */
+@media screen and (max-width:768px) {
     .header {
-        background-color: #445560;
+        background-color: rgba(0, 0, 0, 0.5);
         height: 70px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: start;
-        align-items: center;
         position: absolute; top:0;
         position: absolute; right: 0;
         position: absolute; left: 0;
+        list-style: none;
     }
     
     .dropdown-img {
-        width: 50px;
+        width: 35px;
     height: auto;
     }
-    
     .logo {
         width: 160px;
     height: auto;
-    padding-top: 4px;
-    margin-left: 30vw;
     cursor: pointer;
+    position: absolute; top:0;
+    position: absolute; right: 0;
+    position: absolute; left: 0;
+    
     }
     .dropbtn {
         color: antiquewhite;
         font-size: 16px;
         cursor: pointer;
         border: none;
-        padding-top: 1vh;
+        padding-top: .75vh;
         background-color: transparent;
         max-width: 15%;
     }
-    
+    .logodesktop {
+        display:none
+    }
     .dropdown {
         width: 100px;
+        height: 65px;
     }
     .dropdown-content {
         display: none;
-        background-color: #445560;
+        background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
-        min-width: 150px;
+        min-width: 200px;
         z-index: 1;
-        left: 0;}
+        list-style-type: none;
+        left: 0;
+    padding-top: 30px;}
+    .dropdown-content li {
+        list-style-type: none;
+    }
     .dropdown:hover .dropdown-content {
         display: block;
       }  
@@ -385,52 +666,171 @@ margin-left: 20vw
         text-decoration: none;
         display: block;
       }
-      .dropdown-Lebanon {
-        cursor: pointer;
-        display: none;
-        position: absolute;
-        left: 160px;
-        top: 0px;
-        min-width: 160px;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* Hero Img Settings */
+    .hero1 {
+        height: 75vh;
+    }
+    .hero1 h1 {
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .herobutton {
+        padding: .5em;
+    }
+    /* Destinations on Index */
+    .about-boxes img {
+        width: 80vw;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: 7vw;
+        margin-right: 3vw;
+    }
+    .about-boxes {
+        margin-top: 25px;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    
+    }
+    .about-boxes-1 {
+        width: 80vw;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    /* Country Nav Button Scaling */
+    .nav-buttons-div {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 30px;
+    
+    }
+    .nav-buttons {
+        padding: 10px;
+        border-radius: 30%;
+        box-shadow:0px 0px 0px 4px #000000 inset;
+    font-size: 30px;}
+    
+    .nav-buttons:hover {
+        box-shadow:0px 0px 0px 4px #FF9666 inset;
+    }
+     .tourist-about-header h3 {
+        text-align: center;
+        font-size: 40px;
+    font-weight: bold;
+    color: black;
+    }
+    .about-boxes-1 h3 {
+        font-size: 36px;
+    }
+    /* Destinations on About */
+    .index-destinations {
+        margin-bottom: 65px;
+    }
+      .dest-flex {
+          margin-left: 3vw;
+          margin-right: 3vw;
+          flex-wrap: wrap;
       }
+    .index-destinations h3, .AboutUs h3, .dest-list h3, .tourist-about-header h3{
+        text-align: center;
+        font-size: 56px;
+    }
+    .index-destinations h4 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+    .index-destinations a {
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    
+    }
+    .dest-Lebanon, .dest-Canada, .dest-Egypt {
+        border: 5px solid #2a3238;
+        width: 100vw;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    
+    }
+    .dest-Lebanon:hover, .dest-Canada:hover, .dest-Egypt:hover {
+        border: 5px solid #FF9666;
+    }
+    .dest-Lebanon img, .dest-Canada img, .dest-Egypt img {
+        height: auto;
+        width: 100%;
+        border-radius: 5px;
+    }
+    /* About Us on Index */
+    .AboutUs {
+        margin-top: 65px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 75px;
+    }
+    .AboutUs-text {
+        flex-wrap: nowrap;
+        flex-direction: column;}
+        .AboutUs-text img {
+            padding: 5px;
+            width: 35%; 
+        }
+    .AboutUs p {
+        font-size: 20px;
+        padding: 10px
+    }
+    .AboutUs img {
+        width:97%;
+        height: auto;
+    }
 
-/* Footer Start */
-footer {
-    background-color: #445560;
+/* Destinations.html Scaling/edits */
+.dest-list {
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
-.footerlogo {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+.destinations-flex{
+flex-direction: column;
 }
-.container{
-    display: flex;
-    justify-content: space-around;
+.destinations-Lebanon {
+    flex-direction: column;
+    margin-bottom: 25px;
 }
-
-.footerbutton {
-    background-color: rgba(62, 144, 149, 1);
-    color: white;
+.destinations-Lebanon article {
+    margin-bottom: 15px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
 }
-h4 {
-    color: white;
+.dest-text h4 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font: weight 900px;
 }
-i {
-    color:white;
+.dest-text p {
+    font-size: 17px;
 }
-
-
-/* Footer End */
-/* Destinations on Index */
-.dest-Lebanon img {
+.destinations-Lebanon img {
     height: auto;
     width: 100%;
+    border-radius: 0px;
+}
+.destinations-Lebanon a {
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 25px;
+margin-left: 20vw
 }
 }
-/* Medium Tablet View-------------------------------------- */
-/* Mobile View-------------------------------------- */
+/* Mobile View-------------------------------------------------------------------------------------- */
 @media screen and (max-width:480px) {
 /* nav Bar Start*/
 .header {
@@ -450,13 +850,17 @@ height: auto;
     width: 160px;
 height: auto;
 cursor: pointer;
+position: absolute; top:0;
+position: absolute; right: 0;
+position: absolute; left: 0;
+
 }
 .dropbtn {
     color: antiquewhite;
     font-size: 16px;
     cursor: pointer;
     border: none;
-    padding-top: 1vh;
+    padding-top: .75vh;
     background-color: transparent;
     max-width: 15%;
 }
@@ -465,14 +869,17 @@ cursor: pointer;
 }
 .dropdown {
     width: 100px;
+    height: 65px;
 }
 .dropdown-content {
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    min-width: 150px;
+    min-width: 200px;
     z-index: 1;
-    left: 0;}
+    list-style-type: none;
+    left: 0;
+padding-top: 30px;}
 .dropdown:hover .dropdown-content {
     display: block;
   }  
@@ -481,64 +888,167 @@ cursor: pointer;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-/* Hero img */
+  } 
+/* Hero Img Settings */
 .hero1 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #FDFBF5;
-    text-decoration: none;
-    background-image: url("https://lp-cms-production.imgix.net/2019-06/1444dbfb91889c964033cf90d6bc6cc9-jeita-grotto.jpg")
+    height: 75vh;
 }
 .hero1 h1 {
     font-size: 3em;
     margin-top: 0;
     margin-bottom: 0.5em;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
-.herobutton{
-    display: block;
-    width: 150px;
-    padding: 1em;
-    margin-top: 50px;
-    border: 3px solid #FDFBF5 ;
-    margin-left:auto;
-    margin-right:auto;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 20px;
+.herobutton {
+    padding: .5em;
 }
-
 /* Destinations on Index */
+.about-boxes img {
+    width: 80vw;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.about-boxes {
+    margin-top: 25px;
+    margin-left: 0vw;
+    margin-right: 0vw;
 
-.dest-Lebanon img {
+}
+.about-boxes-1 {
+    width: 80vw;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/* Country Nav Button Scaling */
+.nav-buttons-div {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
+
+}
+.nav-buttons {
+    padding: 10px;
+    border-radius: 30%;
+    box-shadow:0px 0px 0px 4px #000000 inset;
+font-size: 30px;}
+
+.nav-buttons:hover {
+    box-shadow:0px 0px 0px 4px #FF9666 inset;
+}
+ .tourist-about-header h3 {
+    text-align: center;
+    font-size: 40px;
+font-weight: bold;
+color: black;
+}
+.about-boxes-1 h3 {
+    font-size: 36px;
+}
+/* Destinations on About */
+.index-destinations {
+    margin-bottom: 65px;
+}
+  .dest-flex {
+      margin-left: 3vw;
+      margin-right: 3vw;
+      flex-wrap: wrap;
+  }
+.index-destinations h3, .AboutUs h3, .dest-list h3, .tourist-about-header h3{
+    text-align: center;
+    font-size: 56px;
+}
+.index-destinations h4 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.index-destinations a {
+font-size: 25px;
+padding: 5px;
+border-radius: 20px;
+margin-bottom: 5px;
+
+}
+.dest-Lebanon, .dest-Canada, .dest-Egypt {
+    border: 5px solid #2a3238;
+    width: 100vw;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+.dest-Lebanon:hover, .dest-Canada:hover, .dest-Egypt:hover {
+    border: 5px solid #FF9666;
+}
+.dest-Lebanon img, .dest-Canada img, .dest-Egypt img {
     height: auto;
     width: 100%;
+    border-radius: 5px;
 }
-
-.Aboutboxes {
+/* About Us on Index */
+.AboutUs {
     margin-top: 65px;
-    margin-left: 7vw;
-    margin-right: 7vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     margin-bottom: 75px;
 }
-.Aboutboxes-text {
-    background-color: rgba(0, 0, 0, 0.10);
-    display: flex;
+.AboutUs-text {
     flex-wrap: nowrap;
-    flex-direction: row;}
-    .Aboutboxes-text img {
-        padding: 30px;
+    flex-direction: column;}
+    .AboutUs-text img {
+        padding: 5px;
         width: 35%; 
     }
-.Aboutboxes p {
-    font-size: 30px;
-    padding: 30px
+.AboutUs p {
+    font-size: 20px;
+    padding: 10px
+}
+.AboutUs img {
+    width:97%;
+    height: auto;
+}
+/* Destinations.html Scaling/edits */
+.dest-list {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.destinations-flex{
+flex-direction: column;
+}
+.destinations-Lebanon {
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.destinations-Lebanon article {
+    margin-bottom: 15px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+}
+.dest-text h4 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font: weight 900px;
+}
+.dest-text p {
+    font-size: 17px;
+}
+.destinations-Lebanon img {
+    height: auto;
+    width: 100%;
+    border-radius: 0px;
+}
+.destinations-Lebanon a {
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 25px;
+margin-left: 20vw
 }
 }
