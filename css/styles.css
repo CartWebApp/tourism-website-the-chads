@@ -20,7 +20,7 @@ list-style-type: none}
     background-image: url(../IMG/Canada-Forest.jpg)
 }
 .destinations .hero1  {
-    background-image: url(../IMG/GrottoHero.jpg);
+    background-image: url(../IMG/canadahero.jpg);
 }
 .lebanon-about .hero1 {
     background-image: url(../IMG/GrottoHero.jpg);
@@ -28,8 +28,33 @@ list-style-type: none}
 .lebanon-discover .hero1 {
     background-image: url(../IMG/Pigeon-Rock.jpg);
 }
-.lebanon-visi .hero1 {
+.lebanon-visit .hero1 {
     background-image: url(../IMG/lebanon-plane.jpg);
+}
+.aboutegypt .hero1 {
+    background-image: url(../IMG/pyramids.jpeg);
+}
+.discoveregypt .hero1 {
+    background-image: url(../IMG/pyramids.jpeg);
+}
+.visitegypt .hero1 {
+    background-image: url(../IMG/pyramids.jpeg);
+}
+.about-canada .hero1 {
+    background-image: url(../IMG/canadahero.jpg);
+}
+.discover-canada .hero1 {
+    background-image: url(../IMG/canadahero.jpg);
+}
+.visit-canada .hero1 {
+    background-image: url(../IMG/canadahero.jpg);
+}
+.header-highlight {
+    /* background: linear-gradient(.25turn, rgba(195, 212, 78, .75), 55%, rgba(255, 150, 102, .75)); */
+    border-bottom:7px solid rgba(255, 150, 102, .75) ;
+    padding: 7px;
+    display: block;
+    border-radius: 15px;
 }
 .herobutton{
     display: block;
@@ -46,13 +71,18 @@ list-style-type: none}
 footer {
     background-color: #445560;
     max-height:400px;
+padding-bottom: 150px;
 }
 
 .footerbutton {
     color: white;
     background-color: rgba(62, 144, 149, 1);
-    height: 9vh;
+    height: 25px;
     width: auto;
+    padding: 20px;
+    display: block;
+    border-radius: 20px;
+    border: 5px solid white
 }
 .hero1 a {
     color: white;
@@ -65,6 +95,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 25px;
+    color: white;
 }
 
 .footerlogo {
@@ -124,7 +156,7 @@ footer {
     font-weight: bold;
 }
 .nav-buttons:hover {
-    box-shadow:0px 0px 0px 5px #FF9666 inset;
+    box-shadow:0px 0px 0px 5px rgb(255, 150, 102) inset;
 }
 /* Destinations on Index Scaling */
 
@@ -152,16 +184,23 @@ text-align: center;
 .dest-Lebanon, .dest-Canada, .dest-Egypt {
     width: 30%;
     background-color: #445560 ;
+    border-radius: 15px;
 
+}
+.dest-flex img {
+    border-radius: 5px;
 }
 .destinations-text {
     text-align: center;
 }
 /* About Us Index Scaling */
-
+.AboutUs {
+    border-radius: 15px;
+}
 .AboutUs-text {
     background-color: rgba(0, 0, 0, 0.10);
-    display: flex;}
+    display: flex;
+}
 /* Destination.html scaling */
 .destinations-flex{
 display: flex;
@@ -416,7 +455,7 @@ margin-left: 20vw
 
 }
 /* Large Tablet View-------------------------------------- */
-@media screen and (max-width:992px) {
+@media screen and (max-width:1250px) {
     /* ------------------------------------------INDEX----------------------------- */
 /* Header */
 .header {
@@ -511,23 +550,29 @@ margin-bottom: 5px;
     width: 100%;
 }
 /* About Us on Index */
-.AboutUs {
-    margin-top: 65px;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-bottom: 75px;
-}
-.AboutUs-text {
-    flex-wrap: nowrap;
-    flex-direction: row;}
-    .AboutUs-text img {
-        padding: 30px;
-        width: 35%; 
+    /* About Us on Index */
+    .AboutUs {
+        margin-top: 65px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 75px;
     }
-.AboutUs p {
-    font-size: 30px;
-    padding: 30px
-}
+    .AboutUs-text {
+        flex-wrap: nowrap;
+        flex-direction: column;}
+        .AboutUs-text img {
+            padding: 5px;
+            width: 35%; 
+        }
+    .AboutUs p {
+        font-size: 20px;
+        padding: 10px
+    }
+    .AboutUs img {
+        width:97%;
+        height: auto;
+    }
+
 /* -----------------------Destinations.html---------------------------------- */
 /* Destinations.html Scaling/edits */
 .dest-list {
